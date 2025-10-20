@@ -16,18 +16,27 @@ body {
 }
 
 
+
+
 .button {
-  padding: 50px 76px;
+ height: 90px;   
+  width: 176px;
+  padding-left: 20px;
+  padding-bottom: 20px;
   border: none;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: left;
+  text-decoration: none !important;
 }
 
-
 .button1 { background: #10A1D9; } 
-.button1:hover { background: #0e8ec1; }
+.button1:hover { background: #0f95ca; }
 
 .button2 { background: #83929A; } 
 .button2:hover { background: #77858c; }
@@ -37,3 +46,9 @@ body {
 
 .button4 { background: #5CB1E0; } 
 .button4:hover { background: #519cc5; }
+
+/* Ensure anchors never show underline on hover/focus */
+a.button:hover,
+a.button:focus {
+  text-decoration: none;
+}
